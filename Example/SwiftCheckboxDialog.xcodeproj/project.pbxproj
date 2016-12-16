@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		64EBC56E935A3C98C2952800 /* Pods_SwiftCheckboxDialog_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E14CBF1C6DCD7B8DE560F4 /* Pods_SwiftCheckboxDialog_Tests.framework */; };
+		6F3052FA1E041CFA00E47CD2 /* SwiftCheckboxDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3052F91E041CFA00E47CD2 /* SwiftCheckboxDialog.framework */; };
 		C3449CCC845EAB70EFB9534B /* Pods_SwiftCheckboxDialog_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8B2F49ECDFF8AD2804D47C /* Pods_SwiftCheckboxDialog_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		685396C12B9DCADA59C5AAC9 /* Pods-SwiftCheckboxDialog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCheckboxDialog_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCheckboxDialog_Tests/Pods-SwiftCheckboxDialog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F3052F91E041CFA00E47CD2 /* SwiftCheckboxDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheckboxDialog.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftCheckboxDialog-fzjzxwbinqsmghcrstkfwpeokwef/Build/Products/Debug-iphoneos/SwiftCheckboxDialog/SwiftCheckboxDialog.framework"; sourceTree = "<group>"; };
 		7C82D1C8D1784B3CAC787E18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9FF0967141042D87477F1001 /* SwiftCheckboxDialog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftCheckboxDialog.podspec; path = ../SwiftCheckboxDialog.podspec; sourceTree = "<group>"; };
 		A6FF0B9B58E13F756F391B08 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3052FA1E041CFA00E47CD2 /* SwiftCheckboxDialog.framework in Frameworks */,
 				C3449CCC845EAB70EFB9534B /* Pods_SwiftCheckboxDialog_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,7 @@
 		4CE3BDE3B490166FB312F778 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F3052F91E041CFA00E47CD2 /* SwiftCheckboxDialog.framework */,
 				AA8B2F49ECDFF8AD2804D47C /* Pods_SwiftCheckboxDialog_Example.framework */,
 				42E14CBF1C6DCD7B8DE560F4 /* Pods_SwiftCheckboxDialog_Tests.framework */,
 			);
@@ -210,14 +214,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 68PSFYW4WR;
+						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 68PSFYW4WR;
+						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -415,8 +423,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -439,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -460,8 +470,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -477,9 +489,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -488,12 +501,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B03837A1A68BAFA967B5494 /* Pods-SwiftCheckboxDialog_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 68PSFYW4WR;
 				INFOPLIST_FILE = SwiftCheckboxDialog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -501,12 +518,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F026C5F1D4558F73C5018FDF /* Pods-SwiftCheckboxDialog_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 68PSFYW4WR;
 				INFOPLIST_FILE = SwiftCheckboxDialog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -514,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 685396C12B9DCADA59C5AAC9 /* Pods-SwiftCheckboxDialog_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 68PSFYW4WR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -526,6 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -533,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D4BE64928B18F7072F56220 /* Pods-SwiftCheckboxDialog_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 68PSFYW4WR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,6 +565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

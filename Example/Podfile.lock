@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCheckboxDialog (0.1.0)
+
+DEPENDENCIES:
+  - SwiftCheckboxDialog (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftCheckboxDialog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftCheckboxDialog: 473b6a3e15342b225dca3f525f3f499d5030a93f
+
+PODFILE CHECKSUM: fa89d189059622df79d0a3d8f6f14c6057ccab12
+
+COCOAPODS: 1.1.1
