@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 Simple checkbox dialog written in Swift, it uses AutoLayout to adopt to different screen sizes.
                        DESC
 
-  s.homepage         = 'https://github.com/kkontus/SwiftCheckboxDialog'
+  s.homepage         = 'https://github.com/kkontus/SwiftCheckboxDialogCocoapod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kkontus' => 'kristijan.kontus@gmail.com' }
-  s.source           = { :git => 'https://github.com/kkontus/SwiftCheckboxDialog.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kkontus/SwiftCheckboxDialogCocoapod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'

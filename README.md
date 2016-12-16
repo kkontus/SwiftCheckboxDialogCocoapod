@@ -1,7 +1,14 @@
+# SwiftCheckboxDialog
+
+[![Version](https://img.shields.io/cocoapods/v/SwiftCheckboxDialog.svg?style=flat)](http://cocoapods.org/pods/SwiftCheckboxDialog)
+[![License](https://img.shields.io/cocoapods/l/SwiftCheckboxDialog.svg?style=flat)](http://cocoapods.org/pods/SwiftCheckboxDialog)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftCheckboxDialog.svg?style=flat)](http://cocoapods.org/pods/SwiftCheckboxDialog)
+
 ## Overview
 
 SwiftCheckboxDialog is a simple dialog that contains multiple select checkboxes, written in Swift 3 and xCode 8.2.
 
+![](checkbox.png?raw=true "Checkbox dialog screenshot")
 
 ## Requirements
 * ARC
