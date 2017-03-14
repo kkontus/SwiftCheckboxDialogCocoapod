@@ -1,5 +1,5 @@
 PODS:
-  - SwiftCheckboxDialog (0.1.0)
+  - SwiftCheckboxDialog (0.1.1)
 
 DEPENDENCIES:
   - SwiftCheckboxDialog (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftCheckboxDialog: 473b6a3e15342b225dca3f525f3f499d5030a93f
+  SwiftCheckboxDialog: 5cfe6403e37a059753f3f1a4495469391c522022
 
 PODFILE CHECKSUM: fa89d189059622df79d0a3d8f6f14c6057ccab12
 
