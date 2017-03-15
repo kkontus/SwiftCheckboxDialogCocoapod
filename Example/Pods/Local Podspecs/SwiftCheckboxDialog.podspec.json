@@ -1,6 +1,6 @@
 {
   "name": "SwiftCheckboxDialog",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "summary": "Simple checkbox dialog written in Swift.",
   "description": "Simple checkbox dialog written in Swift, it uses AutoLayout to adopt to different screen sizes.",
   "homepage": "https://github.com/kkontus/SwiftCheckboxDialogCocoapod",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/kkontus/SwiftCheckboxDialogCocoapod.git",
-    "tag": "0.1.1"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "10.0"

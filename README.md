@@ -6,7 +6,7 @@
 
 ## Overview
 
-SwiftCheckboxDialog is a simple dialog that contains multiple select checkboxes, written in Swift 3 and xCode 8.2.
+SwiftCheckboxDialog is a simple dialog that contains multiple select checkboxes, written in Swift 3 and xCode 8.2.1
 
 ![](checkbox.png "Checkbox dialog screenshot")
 
