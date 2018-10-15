@@ -8,7 +8,7 @@
 
 SwiftCheckboxDialog is a simple dialog that contains multiple select checkboxes, written in Swift 4.2 and xCode 10
 
-![](checkbox.png "Checkbox dialog screenshot")
+![](https://raw.githubusercontent.com/kkontus/SwiftCheckboxDialogCocoapod/1.0.1/checkbox.png "Checkbox dialog screenshot")
 
 ## Requirements
 * ARC
