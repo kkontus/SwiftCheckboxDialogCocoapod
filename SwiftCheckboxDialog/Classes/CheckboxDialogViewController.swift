@@ -60,13 +60,13 @@ open class CheckboxDialogViewController: UIViewController, UITableViewDelegate, 
         showDialogView()
     }
     
-    func okButtonAction(_ sender: UIButton!) {
+    @objc func okButtonAction(_ sender: UIButton!) {
         // on OK pressed we need to set selectedValues
         self.delegateDialogTableView?.onCheckboxPickerValueChange(self.componentName!, values: self.selectedValues)
         self.dismiss(animated: false, completion: nil)
     }
     
-    func cancelButtonAction(_ sender: UIButton!) {
+    @objc func cancelButtonAction(_ sender: UIButton!) {
         // on Cancel pressed we need to restore to default values (values that we loaded from user defaults, no matter what we selected in meantime)
         selectedValues = tuplesToDictionary(tuples: defaultValues) //preselect columns that we loaded from user defaults
         
@@ -164,8 +164,8 @@ open class CheckboxDialogViewController: UIViewController, UITableViewDelegate, 
         cancelButton.layer.borderWidth = 1
         cancelButton.layer.borderColor = UIColor.defaultDialogBorderColor().cgColor
         cancelButton.addTarget(self, action: #selector(cancelButtonAction), for: .touchUpInside)
-        cancelButton.setTitle("Cancel", for: UIControlState.normal)
-        cancelButton.setTitleColor(UIColor.defaultButtonTextColor(), for: UIControlState())
+        cancelButton.setTitle("Cancel", for: UIControl.State.normal)
+        cancelButton.setTitleColor(UIColor.defaultButtonTextColor(), for: UIControl.State())
         cancelButton.widthAnchor.constraint(equalToConstant: dialogViewWidth / 2).isActive = true
         cancelButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
     }
@@ -174,18 +174,18 @@ open class CheckboxDialogViewController: UIViewController, UITableViewDelegate, 
         okButton.backgroundColor   = UIColor.white
         okButton.layer.borderWidth = 1
         okButton.layer.borderColor = UIColor.defaultDialogBorderColor().cgColor
-        okButton.setTitle("OK", for: UIControlState.normal)
+        okButton.setTitle("OK", for: UIControl.State.normal)
         okButton.addTarget(self, action: #selector(okButtonAction), for: .touchUpInside)
-        okButton.setTitleColor(UIColor.defaultButtonTextColor(), for: UIControlState())
+        okButton.setTitleColor(UIColor.defaultButtonTextColor(), for: UIControl.State())
         okButton.widthAnchor.constraint(equalToConstant: dialogViewWidth / 2).isActive = true
         okButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
     }
     
     func createStackView() {
         stackView.backgroundColor = UIColor.white
-        stackView.axis  = UILayoutConstraintAxis.horizontal
-        stackView.distribution  = UIStackViewDistribution.equalSpacing
-        stackView.alignment = UIStackViewAlignment.center
+        stackView.axis  = NSLayoutConstraint.Axis.horizontal
+        stackView.distribution  = UIStackView.Distribution.equalSpacing
+        stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 0.0
         
         stackView.addArrangedSubview(cancelButton)
@@ -270,7 +270,7 @@ open class CheckboxDialogViewController: UIViewController, UITableViewDelegate, 
     }
     
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = CheckboxViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: CheckboxViewCell.identifier)
+        let cell = CheckboxViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: CheckboxViewCell.identifier)
         
         let object = tableData[indexPath.row]
         cell.setData(object)
