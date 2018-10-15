@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftCheckboxDialog'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Simple checkbox dialog written in Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Simple checkbox dialog written in Swift, it uses AutoLayout to adopt to differen
   s.source           = { :git => 'https://github.com/kkontus/SwiftCheckboxDialogCocoapod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'SwiftCheckboxDialog/Classes/**/*'
   
